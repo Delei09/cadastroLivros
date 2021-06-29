@@ -1,0 +1,21 @@
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.item{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 700px;
+  margin: 5px;
+}
+.item label{
+    width: 100px;
+}
+
+.formulario button {
+    margin-top: 15px;
+}

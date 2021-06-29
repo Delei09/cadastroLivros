@@ -1,0 +1,16 @@
+.header{
+    background-color: #5171d1;
+    color: white;
+    height: 150px;
+    text-align: center;
+}
+h1{
+    font-weight: 700;
+}
+.pagina{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
