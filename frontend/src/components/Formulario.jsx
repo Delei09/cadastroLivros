@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import style from './Formulario.module.css'
 
 
-const Formulario = ({input, value, setValue}) => {
+const Formulario = ({input, value, setValue, botao , setBotao}) => {
 
 const [formula , setFormula] = useState(value)
 
@@ -12,6 +12,11 @@ function setar(e){
     setFormula( {...formula , [id] : valor} )
     setValue(formula)
     console.log(value)
+}
+function salvar(e){
+    e.preventDefault()
+    botao = 'salvar'
+    setBotao(botao)
 }
 
     return(
@@ -27,7 +32,7 @@ function setar(e){
                     )
                    
                 })}
-                <button type="submit" className="btn btn-primary">Salvar</button>
+                <button type="submit" className="btn btn-primary" onClick = {e => salvar(e)}  >Salvar</button>
             </form>
 
         </>
