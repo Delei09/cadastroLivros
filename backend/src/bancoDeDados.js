@@ -1,30 +1,66 @@
-const usuarios = {  }
+const usuarios = { }
+const livros = { }
+
+//Salvar usuarios
 
 const sequence = {
     _id : 1,
     get id() {
-        return this._id++   /// sempre q chama sequence vai seta o id
+        return this._id++  
     }
 }
 
 
+
 function salvaUsuario(usuario){
-    if (!usuario.id) usuario.id = sequence.id      //// !usuarios.id ve se esta setado o usuarios id
-    usuarios[usuario.id] = usuario;    ///atualiza ou mantem q foi passado na linha acima
-    return usuario   ////ja vai ter o id
+    console.log('to no salvar usuario')
+    if (!usuario.id) usuario.id = sequence.id     
+    usuarios[usuario.id] = usuario;   
+    return usuario   
 }
 
 function getUsuario(id){
-    return usuarios[id] || {}      // retorna usuario q contem o id se nao tiver retorna objeto vazio
+    return usuarios[id] || {}      
 }
 
 function getUsuarios(){
+    console.log('requisição get')
     return Object.values(usuarios)  /// retorna o valores dentro do objto
 }
 function deleteUsuarios(id){
     const usuario = usuarios[id]
     delete usuarios[id]
-    return usuario   /// retorna o valores dentro do objto
+    return usuarios  
 }
 
-module.exports = {salvaUsuario, getUsuario, getUsuarios, deleteUsuarios}
+//salvar livros
+
+const sequenceLivros = {
+    _id : 1,
+    get id() {
+        return this._id++  
+    }
+}
+
+
+function salvarLivro(livro){
+    if (!livro.id) livro.id = sequenceLivros.id     
+    livros[livro.id] = livro;  
+    return livro   
+}
+
+function getLivros(id){
+    return livros[id] || {}      
+}
+
+function getLivro(){
+    console.log('requisição get')
+    return Object.values(livros)  /// retorna o valores dentro do objto
+}
+function deleteLivros(id){
+    const livro = livros[id]
+    delete livros[id]
+    return livros  
+}
+
+module.exports = {salvaUsuario, getUsuario, getUsuarios, deleteUsuarios, getLivro, getLivros, salvarLivro, deleteLivros}

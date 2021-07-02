@@ -3,3 +3,10 @@
     overflow-x: scroll;
     height: 500px;
 }
+.opcao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}

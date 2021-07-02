@@ -4,7 +4,7 @@ import Usuario from './Usuario'
 import Livros from './Livros';
 import LivrosEmprestados from './LivrosEmprestados';
 import React from 'react'
-import {Switch, Route , Redirect} from 'react-router-dom'
+import {Switch, Route } from 'react-router-dom'
 
 const Rotas = () => {
     return(

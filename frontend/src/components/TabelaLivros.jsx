@@ -26,13 +26,13 @@ const Tabela = ({input, table, infoTable, funcao}) => {
     }
     useEffect( () => {
         console.log(table)
-            const ta = table.map( ({id ,nome , email, telefone }) => {
+            const ta = table.map( ({id ,nome , autor, usuario})  => {
                 return(
                    <tr key = {id}>
                        <th scope="row"> {id}  </th>
                        <td> {nome}  </td>
-                       <td>{email} </td>
-                       <td>{telefone} </td>
+                       <td>{autor} </td>
+                       <td>{usuario} </td>
                        <td className = {style.opcao}> <FontAwesomeIcon icon = {faTrashAlt} onClick = {e => excluir(id)}/> 
                         
                         </td>
