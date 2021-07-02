@@ -2,20 +2,19 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/servidor.js",
+  "main": "servidor.js",
+  "dependencies": {
+    "cors": "2.8.4",
+    "express": "4.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.9"
-  }
+  "license": "ISC"
 }

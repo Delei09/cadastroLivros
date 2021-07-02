@@ -18,3 +18,30 @@ main{
 nav{
     grid-area: nav;
 }
+
+
+@media screen and (max-width: 700px){
+    .App{
+        display: grid;
+        grid-template-columns: 170px 1fr;
+        grid-template-rows: 200px 1fr;
+        grid-template-areas: 'nav header'
+                             'nav    main'
+        ;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .App{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'nav'
+                             'header'
+                             'main'
+        ;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+}

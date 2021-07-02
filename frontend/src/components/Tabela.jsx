@@ -45,7 +45,8 @@ const Tabela = ({input, table, infoTable, funcao}) => {
         
 
     return(
-            <table className= {`table ${style.tabela}`}>
+        <div className =  {style.tabela}>
+              <table className= {`table`}>
                 <thead>
                     <tr>
                     {tabelaHead()}
@@ -55,6 +56,8 @@ const Tabela = ({input, table, infoTable, funcao}) => {
                     {tabela}
                 </tbody>
             </table>
+        </div>
+          
     )
 }
 

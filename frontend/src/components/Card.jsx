@@ -24,7 +24,7 @@ const Card = () => {
                </div>
            </div>
         </div>
-           <div className="card" >
+           <div className = {`card ${style.opcao}`} >
                 <div className="card-body">
                     <h5 className="card-title">Livros Emprestados <FontAwesomeIcon icon ={faSmile} />   </h5>
                     <p className="card-text">4</p>

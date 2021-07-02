@@ -3,7 +3,18 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+   
 }
 .cardDash  div{
     width: 250px;
+}
+@media screen and (max-width: 735px) {
+    .cardDash{
+        
+        justify-content: center;
+       
+    }
+    .cardDash  div , .opcao{
+        width: 100%;
+    }
 }

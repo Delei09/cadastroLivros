@@ -4,8 +4,8 @@ const app =  express()
 const bancoDeDados = require('./bancoDeDados')
 const cors = require('cors')
 
-app.use(cors())
 
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({extended : true}));
 
@@ -16,13 +16,14 @@ app.get('/usuario' , (req, res, next) =>{
 })
 
 app.get('/usuario/:id' , (req, res, next) =>{
-    res.send(bancoDeDados.getUsuario(req.params.id))   } )
+    res.send(bancoDeDados.getUsuario(req.params.id))  
+ } )
+ 
 app.listen(porta , () =>{
-    console.log('back end na porta ' + porta)
+    console.log('back end na porta ' , + porta)
 })
 
 app.post('/usuario' , (req , res, next) => {
-    console.log(req)
     const produto = bancoDeDados.salvaUsuario({
         nome: req.body.Nome,    //como pegar atributo pelo post
         email: req.body.Email,
@@ -60,7 +61,6 @@ app.get('/livros/:id' , (req, res, next) =>{
     res.send(bancoDeDados.getLivros(req.params.id))   } )
 
 app.post('/livros' , (req , res, next) => {
-    console.log(req)
     const livro = bancoDeDados.salvarLivro({
         nome: req.body.Nome,  
         autor: req.body.Autor,

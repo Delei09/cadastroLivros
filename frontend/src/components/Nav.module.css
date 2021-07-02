@@ -24,3 +24,18 @@
     background-color: rgba(0,0,0,0.7);
     display: block;
 }
+@media screen and (max-height: 1000px) {
+    .nav{
+        height: 100%;
+    }
+}
+@media screen and (max-width: 520px) {
+    .nav{
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+    }
+    .icone{
+        display: none;
+    }
+}

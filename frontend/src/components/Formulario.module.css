@@ -19,3 +19,22 @@
 .formulario button {
     margin-top: 15px;
 }
+
+@media screen and (max-width: 900px) {
+    .item{
+        width: 400px;
+       
+      }
+      .item label{
+          width: 80px;
+      }
+}
+@media screen and (max-width: 650px) {
+    .item{
+        width: 300px;
+        flex-wrap: wrap;
+      }
+      .item label{
+          max-width: 80px;
+      }
+}
