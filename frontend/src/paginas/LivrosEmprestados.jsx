@@ -10,7 +10,7 @@ const Livros = () =>  {
       <Header titulo =  'Livros' icone = 'livro' />
       <Nav />
       <Main titulo = 'Livros Emprestados/ Devolução' subtitulo = 'Acessa as opções para devolver ou para emprestar um livro' >
-            <Tabela input = {['Nome' , 'Tipo' , 'Autor' ]} />
+            
       </Main>
     </>
   );

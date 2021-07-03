@@ -8,11 +8,11 @@
     "express": "4.17.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.9"
+    "nodemon": "^2.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon"
+    "start": "nodemon --watch servidor.js"
   },
   "keywords": [],
   "author": "",

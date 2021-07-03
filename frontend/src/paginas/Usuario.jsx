@@ -11,7 +11,7 @@ const Usuario = () =>  {
   const [form , setForm] = useState({ Nome: "" , Email : "" , Celular : "" , Senha : ""})
   const [clicado, setClicado] = useState('')
   const [tabela , setTabela] = useState([])
-  const [info, setInfo] = useState('')
+  const [info, setInfo] = useState('n')
   const [opcao, setOpcao] = useState('')
 
   useEffect( () => {

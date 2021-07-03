@@ -25,7 +25,7 @@ function salvar(e){
                 {input.map( dados => {
                     return(
                         <div className = {style.item} key = {dados}>
-                            <label for={dados} className="form-label">{dados}: </label>
+                            <label htmlFor={dados} className="form-label"  >{dados}: </label>
                            { dados === 'Senha' ?   <input type= 'password' className="form-control" id= {dados} onChange = {e =>  setar(e) } /> : '' }
                            {dados !== 'Senha'?  <input type={dados} className="form-control" id= {dados} onChange = {e =>  setar(e) } />  : ''}
                         </div>

@@ -27,7 +27,7 @@ const Card = () => {
            <div className = {`card ${style.opcao}`} >
                 <div className="card-body">
                     <h5 className="card-title">Livros Emprestados <FontAwesomeIcon icon ={faSmile} />   </h5>
-                    <p className="card-text">4</p>
+                    <p className="card-text">0</p>
                    <Link to ="/livrosEmprestados" className="btn btn-primary">Emprestar/Devolver</Link>
                 </div>
             </div>
