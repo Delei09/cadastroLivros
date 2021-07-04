@@ -27,7 +27,7 @@ const Header = ({titulo,icone}) => {
 
     return(
         <header className = {style.header}>
-            <h1>Serviço de Emprestimo de livros</h1>
+            <h1>Serviço de Empréstimo de livros</h1>
             <div className ={style.pagina}>
                 <h2> {titulo}  </h2>
                 <FontAwesomeIcon className = 'fa-2x' icon={ico()} />
