@@ -2,7 +2,8 @@
 Projeto feito para o processo seletivo da Nouveen<br/>
 *Projeto em andamento<br/>
 
-![Captura de tela de 2021-07-03 13-59-46](https://user-images.githubusercontent.com/42359865/124361898-167be700-dc08-11eb-9ad6-4b4896aac577.png)<br/>
+![Captura de tela de 2021-07-04 18-17-59](https://user-images.githubusercontent.com/42359865/124399801-59b38400-dcf4-11eb-8929-2c09bfb8f5a6.png)
+
 
 Para executar o programa na sua propria maquina siga as intrunções.<br/>
 
